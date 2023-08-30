@@ -1,9 +1,13 @@
 using System;
 
 public class Solution {
-    public int solution(int n, int t)
+    public long solution(int n, int t)
     {
-        int answer = n*(int)Math.Pow(2,t);
+        long answer = n;
+        for(int i=0; i<t; i++)
+        {
+            answer *= 2;
+        }
         return answer;
     }
 }
